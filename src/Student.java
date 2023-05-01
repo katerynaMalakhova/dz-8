@@ -1,12 +1,14 @@
 public class Student {
-
     private static int globalId = 0;
+
+    private int id;
+
+    private String firstName;
+    private String lastName;
 
     public int getId() {
         return id;
     }
-
-    private int id;
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -16,14 +18,10 @@ public class Student {
         this.lastName = lastName;
     }
 
-    private String firstName;
-    private String lastName;
-
     public Student(String firstName, String lastName){
     globalId++;
     this.id = globalId;
     this.firstName  = firstName;
     this.lastName = lastName;
     }
-
 }

@@ -1,15 +1,12 @@
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
 public class Group {
     private Student headman;
-    private List<Student> listOfStudents;
-    private List<String> listOfTasks;
+    private List<Student> listOfStudents = new ArrayList<>();
+    private List<String> listOfTasks  = new ArrayList<>();
 
     public void createGroup(Student student, String task){
-        listOfStudents = new ArrayList<>();
-        listOfTasks = new ArrayList<>();
         this.headman = student;
         this.listOfStudents.add(student);
         this.listOfTasks.add(task);
